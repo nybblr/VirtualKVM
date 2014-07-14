@@ -14,7 +14,6 @@
 		47672956191BBD7200726705 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 47672954191BBD7200726705 /* Credits.rtf */; };
 		47672959191BBD7200726705 /* KVMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47672958191BBD7200726705 /* KVMAppDelegate.m */; };
 		4767295C191BBD7200726705 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4767295A191BBD7200726705 /* MainMenu.xib */; };
-		4767295E191BBD7200726705 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4767295D191BBD7200726705 /* Images.xcassets */; };
 		47672965191BBD7200726705 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47672964191BBD7200726705 /* XCTest.framework */; };
 		47672966191BBD7200726705 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47672945191BBD7200726705 /* Cocoa.framework */; };
 		4767296E191BBD7200726705 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4767296C191BBD7200726705 /* InfoPlist.strings */; };
@@ -26,6 +25,9 @@
 		47E96806191C3AFB006531E1 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E96805191C3AFB006531E1 /* IOBluetooth.framework */; };
 		47E9680A191DB6FA006531E1 /* GVUserDefaults+KVMApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E96809191DB6FA006531E1 /* GVUserDefaults+KVMApp.m */; };
 		AB8142CD1974670E004CF76B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8142CC1974670E004CF76B /* IOKit.framework */; };
+		ABB20F4019748C1C00CBD083 /* StatusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB20F3C19748C1C00CBD083 /* StatusIcon.png */; };
+		ABB20F4119748C1C00CBD083 /* StatusIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB20F3D19748C1C00CBD083 /* StatusIcon@2x.png */; };
+		ABB20F4419748D6A00CBD083 /* AppIcon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = ABB20F4319748D6A00CBD083 /* AppIcon.iconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +53,6 @@
 		47672955191BBD7200726705 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		47672957191BBD7200726705 /* KVMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVMAppDelegate.h; sourceTree = "<group>"; };
 		47672958191BBD7200726705 /* KVMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVMAppDelegate.m; sourceTree = "<group>"; };
-		4767295D191BBD7200726705 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		47672963191BBD7200726705 /* VirtualKVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualKVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47672964191BBD7200726705 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4767296B191BBD7200726705 /* VirtualKVMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VirtualKVMTests-Info.plist"; sourceTree = "<group>"; };
@@ -71,6 +72,9 @@
 		54C4C9E94FCF400EABD455FF /* libPods-VirtualKVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualKVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8142CC1974670E004CF76B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		ABA73A6A19747484007E2A10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ABB20F3C19748C1C00CBD083 /* StatusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIcon.png; sourceTree = "<group>"; };
+		ABB20F3D19748C1C00CBD083 /* StatusIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusIcon@2x.png"; sourceTree = "<group>"; };
+		ABB20F4319748D6A00CBD083 /* AppIcon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = AppIcon.iconset; sourceTree = "<group>"; };
 		E069E9694C714ACA89946A96 /* Pods-VirtualKVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualKVM.xcconfig"; path = "Pods/Pods-VirtualKVM.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +148,7 @@
 		4767294B191BBD7200726705 /* VirtualKVM */ = {
 			isa = PBXGroup;
 			children = (
+				ABB20F3919748C1C00CBD083 /* Assets */,
 				47672957191BBD7200726705 /* KVMAppDelegate.h */,
 				47672958191BBD7200726705 /* KVMAppDelegate.m */,
 				47E96808191DB6FA006531E1 /* GVUserDefaults+KVMApp.h */,
@@ -155,7 +160,6 @@
 				47672980191C022900726705 /* KVMThunderboltObserver.m */,
 				47E96802191C3A17006531E1 /* KVMBluetoothController.h */,
 				47E96803191C3A17006531E1 /* KVMBluetoothController.m */,
-				4767295D191BBD7200726705 /* Images.xcassets */,
 				4767294C191BBD7200726705 /* Supporting Files */,
 			);
 			path = VirtualKVM;
@@ -200,6 +204,16 @@
 			);
 			name = "Status Menu UI";
 			sourceTree = "<group>";
+		};
+		ABB20F3919748C1C00CBD083 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ABB20F4319748D6A00CBD083 /* AppIcon.iconset */,
+				ABB20F3C19748C1C00CBD083 /* StatusIcon.png */,
+				ABB20F3D19748C1C00CBD083 /* StatusIcon@2x.png */,
+			);
+			path = Assets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -281,9 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				47672950191BBD7200726705 /* InfoPlist.strings in Resources */,
-				4767295E191BBD7200726705 /* Images.xcassets in Resources */,
 				47672956191BBD7200726705 /* Credits.rtf in Resources */,
 				4767295C191BBD7200726705 /* MainMenu.xib in Resources */,
+				ABB20F4019748C1C00CBD083 /* StatusIcon.png in Resources */,
+				ABB20F4119748C1C00CBD083 /* StatusIcon@2x.png in Resources */,
+				ABB20F4419748D6A00CBD083 /* AppIcon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
