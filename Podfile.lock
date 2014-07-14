@@ -5,6 +5,6 @@ DEPENDENCIES:
   - GVUserDefaults
 
 SPEC CHECKSUMS:
-  GVUserDefaults: 50dbc9e24ab41b0c24bda7af8b5944ad0413dd2a
+  GVUserDefaults: b706c0a6ed681ea4693143d920dd5bf49845c3a3
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1
