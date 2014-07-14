@@ -51,7 +51,6 @@
 		47672955191BBD7200726705 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		47672957191BBD7200726705 /* KVMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVMAppDelegate.h; sourceTree = "<group>"; };
 		47672958191BBD7200726705 /* KVMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVMAppDelegate.m; sourceTree = "<group>"; };
-		4767295B191BBD7200726705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4767295D191BBD7200726705 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		47672963191BBD7200726705 /* VirtualKVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualKVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47672964191BBD7200726705 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -71,6 +70,7 @@
 		47E96809191DB6FA006531E1 /* GVUserDefaults+KVMApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+KVMApp.m"; sourceTree = "<group>"; };
 		54C4C9E94FCF400EABD455FF /* libPods-VirtualKVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualKVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8142CC1974670E004CF76B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		ABA73A6A19747484007E2A10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E069E9694C714ACA89946A96 /* Pods-VirtualKVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualKVM.xcconfig"; path = "Pods/Pods-VirtualKVM.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,6 @@
 		47672939191BBD7200726705 = {
 			isa = PBXGroup;
 			children = (
-				AB8142CC1974670E004CF76B /* IOKit.framework */,
 				4767294B191BBD7200726705 /* VirtualKVM */,
 				47672969191BBD7200726705 /* VirtualKVMTests */,
 				47672944191BBD7200726705 /* Frameworks */,
@@ -122,6 +121,7 @@
 		47672944191BBD7200726705 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB8142CC1974670E004CF76B /* IOKit.framework */,
 				47E96805191C3AFB006531E1 /* IOBluetooth.framework */,
 				47672945191BBD7200726705 /* Cocoa.framework */,
 				47672964191BBD7200726705 /* XCTest.framework */,
@@ -383,7 +383,7 @@
 		4767295A191BBD7200726705 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4767295B191BBD7200726705 /* Base */,
+				ABA73A6A19747484007E2A10 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
