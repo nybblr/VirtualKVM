@@ -81,9 +81,10 @@ static NSTimeInterval const kTimeInterval = 2.0;
     
     NSError *error;
     NSArray *plist = [NSPropertyListSerialization propertyListWithData:dataRead options:NSPropertyListImmutable format:NULL error:&error];
-    NSArray *devices = plist[0][@"_items"][0][@"_items"];
+//    NSArray *devices = plist[0][@"_items"][0][@"_items"];
+    NSArray *devices = [[[[plist objectAtIndex:0] objectForKey:@"_items"] objectAtIndex:0] objectForKey:@"_items"];
     for (NSDictionary *device in devices) {
-        if ([device[@"vendor_id_key"] isEqualToString:@"0xA27"]) {
+        if ([[device objectForKey:@"vendor_id_key"] isEqualToString:@"0xA27"]) {
             return YES;
         }
     }

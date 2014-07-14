@@ -7,8 +7,8 @@
 
 - (NSDictionary *)setupDefaults {
     return @{
-             @"toggleBluetooth": @YES,
-             @"toggleTargetDisplayMode": @YES,
+             @"toggleBluetooth": @(YES),
+             @"toggleTargetDisplayMode": @(YES),
             };
 }
 

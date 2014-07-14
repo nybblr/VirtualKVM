@@ -25,6 +25,7 @@
 		47E96804191C3A17006531E1 /* KVMBluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E96803191C3A17006531E1 /* KVMBluetoothController.m */; };
 		47E96806191C3AFB006531E1 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E96805191C3AFB006531E1 /* IOBluetooth.framework */; };
 		47E9680A191DB6FA006531E1 /* GVUserDefaults+KVMApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E96809191DB6FA006531E1 /* GVUserDefaults+KVMApp.m */; };
+		AB8142CD1974670E004CF76B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8142CC1974670E004CF76B /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		47E96808191DB6FA006531E1 /* GVUserDefaults+KVMApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+KVMApp.h"; sourceTree = "<group>"; };
 		47E96809191DB6FA006531E1 /* GVUserDefaults+KVMApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+KVMApp.m"; sourceTree = "<group>"; };
 		54C4C9E94FCF400EABD455FF /* libPods-VirtualKVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualKVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8142CC1974670E004CF76B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		E069E9694C714ACA89946A96 /* Pods-VirtualKVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualKVM.xcconfig"; path = "Pods/Pods-VirtualKVM.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8142CD1974670E004CF76B /* IOKit.framework in Frameworks */,
 				47E96806191C3AFB006531E1 /* IOBluetooth.framework in Frameworks */,
 				47672946191BBD7200726705 /* Cocoa.framework in Frameworks */,
 				284841241468452382E38064 /* libPods-VirtualKVM.a in Frameworks */,
@@ -98,6 +101,7 @@
 		47672939191BBD7200726705 = {
 			isa = PBXGroup;
 			children = (
+				AB8142CC1974670E004CF76B /* IOKit.framework */,
 				4767294B191BBD7200726705 /* VirtualKVM */,
 				47672969191BBD7200726705 /* VirtualKVMTests */,
 				47672944191BBD7200726705 /* Frameworks */,
@@ -399,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -427,9 +432,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -437,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -460,8 +466,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -469,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E069E9694C714ACA89946A96 /* Pods-VirtualKVM.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -484,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E069E9694C714ACA89946A96 /* Pods-VirtualKVM.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
